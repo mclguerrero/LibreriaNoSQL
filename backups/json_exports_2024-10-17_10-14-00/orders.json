@@ -1,0 +1,96 @@
+[
+  {
+    "_id": 1,
+    "user_id": 1,
+    "books": [
+      {
+        "book_id": 1,
+        "quantity": 2
+      },
+      {
+        "book_id": 2,
+        "quantity": 1
+      }
+    ],
+    "total": 111800,
+    "createdAt": { "$date": "2024-10-15T00:00:00Z" },
+    "updatedAt": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 2,
+    "user_id": 2,
+    "books": [
+      {
+        "book_id": 3,
+        "quantity": 1
+      },
+      {
+        "book_id": 4,
+        "quantity": 1
+      }
+    ],
+    "total": 92000,
+    "createdAt": { "$date": "2024-10-15T00:00:00Z" },
+    "updatedAt": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 3,
+    "user_id": 1,
+    "books": [
+      {
+        "book_id": 5,
+        "quantity": 3
+      }
+    ],
+    "total": 105000,
+    "createdAt": { "$date": "2024-10-15T00:00:00Z" },
+    "updatedAt": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 4,
+    "user_id": 3,
+    "books": [
+      {
+        "book_id": 2,
+        "quantity": 2
+      },
+      {
+        "book_id": 6,
+        "quantity": 1
+      }
+    ],
+    "total": 118000,
+    "createdAt": { "$date": "2024-10-15T00:00:00Z" },
+    "updatedAt": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 5,
+    "user_id": 4,
+    "books": [
+      {
+        "book_id": 1,
+        "quantity": 1
+      },
+      {
+        "book_id": 5,
+        "quantity": 2
+      }
+    ],
+    "total": 100000,
+    "createdAt": { "$date": "2024-10-15T00:00:00Z" },
+    "updatedAt": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 6,
+    "user_id": 2,
+    "books": [
+      {
+        "book_id": 4,
+        "quantity": 1
+      }
+    ],
+    "total": 50000,
+    "createdAt": { "$date": "2024-10-15T00:00:00Z" },
+    "updatedAt": { "$date": "2024-10-15T00:00:00Z" }
+  }
+]

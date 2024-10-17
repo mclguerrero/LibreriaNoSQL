@@ -1,0 +1,15 @@
+[
+  {
+    "_id": 1,
+    "name": "Administrador",
+    "createdAt": { "$date": "2024-10-15T00:00:00Z" },
+    "updatedAt": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 2,
+    "name": "Usuario",
+    "createdAt": { "$date": "2024-10-15T00:00:00Z" },
+    "updatedAt": { "$date": "2024-10-15T00:00:00Z" }
+  }
+]
+  

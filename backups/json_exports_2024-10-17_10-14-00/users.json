@@ -1,0 +1,92 @@
+[
+  {
+    "_id": 1,
+    "email": "juanperez@gmail.com",
+    "password": "12345678",
+    "profile": {
+      "_id": 1,
+      "firstName": "Juan Miguel",
+      "lastName": "Pérez",
+      "address": "Calle Falsa 123",
+      "phones": ["123456789", "987654321"]
+    },
+    "roles": [1, 2],
+    "createdAt": { "$date": "2024-10-15T00:00:00Z" },
+    "updatedAt": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 2,
+    "email": "mariagarcia@gmail.com",
+    "password": "23456781",
+    "profile": {
+      "_id": 2,
+      "firstName": "María",
+      "lastName": "García",
+      "address": "Avenida Siempre Viva 742",
+      "phones": ["234567890"]
+    },
+    "roles": [2],
+    "createdAt": { "$date": "2024-10-15T00:00:00Z" },
+    "updatedAt": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 3,
+    "email": "pedrolopez@gmail.com",
+    "password": "34567812",
+    "profile": {
+      "_id": 3,
+      "firstName": "Pedro",
+      "lastName": "López",
+      "address": "Calle de la Esperanza 456",
+      "phones": ["345678901", "456789012"]
+    },
+    "roles": [2],
+    "createdAt": { "$date": "2024-10-15T00:00:00Z" },
+    "updatedAt": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 4,
+    "email": "anacastillo@gmail.com",
+    "password": "45678123",
+    "profile": {
+      "_id": 4,
+      "firstName": "Ana",
+      "lastName": "Castillo",
+      "address": "Boulevard de los Sueños 321",
+      "phones": ["567890123"]
+    },
+    "roles": [2],
+    "createdAt": { "$date": "2024-10-15T00:00:00Z" },
+    "updatedAt": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 5,
+    "email": "carlosmartinez@gmail.com",
+    "password": "56781234",
+    "profile": {
+      "_id": 5,
+      "firstName": "Carlos",
+      "lastName": "Martínez",
+      "address": "Calle de la Libertad 789",
+      "phones": ["678901234"]
+    },
+    "roles": [2],
+    "createdAt": { "$date": "2024-10-15T00:00:00Z" },
+    "updatedAt": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 6,
+    "email": "luisafernandez@gmail.com",
+    "password": "67812345",
+    "profile": {
+      "_id": 6,
+      "firstName": "Luisa",
+      "lastName": "Fernández",
+      "address": "Calle del Sol 654",
+      "phones": ["789012345"]
+    },
+    "roles": [2],
+    "createdAt": { "$date": "2024-10-15T00:00:00Z" },
+    "updatedAt": { "$date": "2024-10-15T00:00:00Z" }
+  }
+]
