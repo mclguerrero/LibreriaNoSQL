@@ -1,0 +1,99 @@
+[
+  {
+    "_id": 1,
+    "name": "Miguel de Cervantes",
+    "country": "España",
+    "birth_date": { "$date": "1547-09-29T00:00:00Z" },
+    "death_date": { "$date": "1616-04-23T00:00:00Z" },
+    "biography": "Miguel de Cervantes fue un escritor, poeta y dramaturgo español, considerado la máxima figura de la literatura española. Es principalmente conocido por su obra 'Don Quijote de la Mancha'.",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 2,
+    "name": "Gabriel García Márquez",
+    "country": "Colombia",
+    "birth_date": { "$date": "1927-03-06T00:00:00Z" },
+    "death_date": { "$date": "2014-04-17T00:00:00Z" },
+    "biography": "Gabriel García Márquez fue un escritor, periodista y novelista colombiano, conocido por su obra 'Cien años de soledad', que le hizo ganar el Premio Nobel de Literatura en 1982.",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 3,
+    "name": "Pablo Neruda",
+    "country": "Chile",
+    "birth_date": { "$date": "1904-07-12T00:00:00Z" },
+    "death_date": { "$date": "1973-09-23T00:00:00Z" },
+    "biography": "Pablo Neruda fue un poeta chileno, diplomático y político, conocido por su estilo lírico y su profunda influencia en la literatura latinoamericana. Fue galardonado con el Premio Nobel de Literatura en 1971.",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 4,
+    "name": "Isabel Allende",
+    "country": "Chile",
+    "birth_date": { "$date": "1942-08-02T00:00:00Z" },
+    "biography": "Isabel Allende es una escritora chilena, conocida por obras como 'La casa de los espíritus' y 'Paula'. Ha sido una de las escritoras más leídas de América Latina.",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 5,
+    "name": "Mario Vargas Llosa",
+    "country": "Perú",
+    "birth_date": { "$date": "1936-03-28T00:00:00Z" },
+    "biography": "Mario Vargas Llosa es un escritor y periodista peruano, ganador del Premio Nobel de Literatura en 2010. Es conocido por sus novelas políticas y sociales, como 'La ciudad y los perros'.",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 6,
+    "name": "Julio Cortázar",
+    "country": "Argentina",
+    "birth_date": { "$date": "1914-08-26T00:00:00Z" },
+    "death_date": { "$date": "1984-02-12T00:00:00Z" },
+    "biography": "Julio Cortázar fue un escritor argentino conocido por su estilo único que combinaba lo real con lo fantástico, autor de obras como 'Rayuela' y 'Final del juego'.",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 7,
+    "name": "Jorge Luis Borges",
+    "country": "Argentina",
+    "birth_date": { "$date": "1899-08-24T00:00:00Z" },
+    "death_date": { "$date": "1986-06-14T00:00:00Z" },
+    "biography": "Jorge Luis Borges fue un escritor, ensayista y poeta argentino, considerado una de las figuras literarias más influyentes del siglo XX. Sus obras como 'Ficciones' y 'El Aleph' son fundamentales en la literatura universal.",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 8,
+    "name": "Frida Kahlo",
+    "country": "México",
+    "birth_date": { "$date": "1907-07-06T00:00:00Z" },
+    "death_date": { "$date": "1954-07-13T00:00:00Z" },
+    "biography": "Frida Kahlo fue una pintora mexicana, pero su impacto en la cultura ha sido tal que su obra ha trascendido al mundo de la literatura y el arte. Sus escritos y su vida inspiraron a generaciones.",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 9,
+    "name": "Rosa Montero",
+    "country": "España",
+    "birth_date": { "$date": "1951-01-03T00:00:00Z" },
+    "biography": "Rosa Montero es una escritora y periodista española, conocida por obras como 'La loca de la casa'. Su escritura explora temas de la identidad, la mente humana y la sociedad.",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 10,
+    "name": "Carlos Fuentes",
+    "country": "México",
+    "birth_date": { "$date": "1928-11-11T00:00:00Z" },
+    "death_date": { "$date": "2012-05-15T00:00:00Z" },
+    "biography": "Carlos Fuentes fue un escritor y diplomático mexicano, autor de importantes novelas como 'La muerte de Artemio Cruz' y 'Terra Nostra'. Su obra es un pilar en la literatura latinoamericana.",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  }
+]

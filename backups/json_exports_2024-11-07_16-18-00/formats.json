@@ -1,0 +1,37 @@
+[
+  {
+    "_id": 1,
+    "name": "Tapa dura",
+    "description": "Libro impreso con encuadernación rígida.",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 2,
+    "name": "Tapa blanda",
+    "description": "Libro impreso con encuadernación flexible.",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 3,
+    "name": "Ebook",
+    "description": "Versión digital del libro, accesible en dispositivos electrónicos.",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 4,
+    "name": "Audiolibro",
+    "description": "Versión en audio del libro, disponible para escuchar.",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 5,
+    "name": "Libro de bolsillo",
+    "description": "Versión más compacta y económica, de tapa blanda.",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  }
+]

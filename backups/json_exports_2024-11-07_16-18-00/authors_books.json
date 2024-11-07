@@ -1,0 +1,42 @@
+[
+  {
+    "_id": 1,
+    "author_id": 1,
+    "book_id": 1,
+    "contribution_type": "Escritor principal",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 2,
+    "author_id": 2,
+    "book_id": 2,
+    "contribution_type": "Escritor principal",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 3,
+    "author_id": 3,
+    "book_id": 3,
+    "contribution_type": "Escritor principal",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 4,
+    "author_id": 4,
+    "book_id": 4,
+    "contribution_type": "Escritor principal",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 5,
+    "author_id": 5,
+    "book_id": 5,
+    "contribution_type": "Escritor principal",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  }
+]
