@@ -1,0 +1,20 @@
+[
+  {
+    "_id": 1,
+    "name": "Administrador",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 2,
+    "name": "Vendedor",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 3,
+    "name": "Cliente",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  }
+]
