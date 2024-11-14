@@ -1,0 +1,72 @@
+[
+  {
+    "_id": 1,
+    "name": "Ficción",
+    "description": "Libros que contienen historias inventadas.",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 2,
+    "name": "No Ficción",
+    "description": "Libros basados en hechos reales, información y análisis.",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 3,
+    "name": "Misterio",
+    "description": "Libros que se centran en resolver un enigma o crimen.",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 4,
+    "name": "Ciencia Ficción",
+    "description": "Libros que exploran futuros, tecnología y mundos imaginarios.",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 5,
+    "name": "Fantasía",
+    "description": "Libros que incluyen elementos mágicos, criaturas fantásticas y mundos imaginarios.",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 6,
+    "name": "Romántico",
+    "description": "Libros que se centran en historias de amor y relaciones sentimentales.",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 7,
+    "name": "Aventura",
+    "description": "Libros que incluyen acción, viajes y la búsqueda de tesoros o desafíos.",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 8,
+    "name": "Biografía",
+    "description": "Libros que narran la vida de una persona real.",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 9,
+    "name": "Histórico",
+    "description": "Libros que relatan hechos históricos reales o ficticios en un contexto histórico.",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 10,
+    "name": "Terror",
+    "description": "Libros destinados a provocar miedo o suspense en el lector.",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  }
+]

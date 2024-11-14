@@ -1,0 +1,100 @@
+[
+  {
+    "_id": 1,
+    "name": "Jorge Luis Borges",
+    "country": "Argentina",
+    "birth_date": { "$date": "1899-08-24T00:00:00Z" },
+    "death_date": { "$date": "1986-06-14T00:00:00Z" },
+    "biography": "Escritor, ensayista y poeta argentino, considerado una de las figuras literarias más influyentes del siglo XX.",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 2,
+    "name": "Isabel Allende",
+    "country": "Chile",
+    "birth_date": { "$date": "1942-08-02T00:00:00Z" },
+    "biography": "Es una escritora chilena, conocida por obras como 'La casa de los espíritus' y 'Paula'.",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 3,
+    "name": "Carlos Fuentes",
+    "country": "México",
+    "birth_date": { "$date": "1928-11-11T00:00:00Z" },
+    "death_date": { "$date": "2012-05-15T00:00:00Z" },
+    "biography": "Carlos Fuentes fue un escritor y diplomático mexicano, autor de importantes novelas como 'La muerte de Artemio Cruz'.",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 4,
+    "name": "Gabriel García Márquez",
+    "country": "Colombia",
+    "birth_date": { "$date": "1927-03-06T00:00:00Z" },
+    "death_date": { "$date": "2014-04-17T00:00:00Z" },
+    "biography": "Gabriel García Márquez fue un escritor colombiano, conocido por su obra 'Cien años de soledad'.",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 5,
+    "name": "Pablo Neruda",
+    "country": "Chile",
+    "birth_date": { "$date": "1904-07-12T00:00:00Z" },
+    "death_date": { "$date": "1973-09-23T00:00:00Z" },
+    "biography": "Poeta chileno conocido por su estilo lírico y su profunda influencia en la literatura latinoamericana.",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 6,
+    "name": "Julio Cortázar",
+    "country": "Argentina",
+    "birth_date": { "$date": "1914-08-26T00:00:00Z" },
+    "death_date": { "$date": "1984-02-12T00:00:00Z" },
+    "biography": "Escritor argentino conocido por su estilo único que combinaba lo real con lo fantástico.",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 7,
+    "name": "Mario Vargas Llosa",
+    "country": "Perú",
+    "birth_date": { "$date": "1936-03-28T00:00:00Z" },
+    "biography": "Mario Vargas Llosa es un escritor peruano y ganador del Premio Nobel de Literatura en 2010.",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 8,
+    "name": "Mario Benedetti",
+    "country": "Uruguay",
+    "birth_date": { "$date": "1920-09-14T00:00:00Z" },
+    "death_date": { "$date": "2009-05-17T00:00:00Z" },
+    "biography": "Mario Benedetti fue un escritor uruguayo conocido por su poesía y sus novelas de tema social.",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 9,
+    "name": "José Saramago",
+    "country": "Portugal",
+    "birth_date": { "$date": "1922-11-16T00:00:00Z" },
+    "death_date": { "$date": "2010-06-18T00:00:00Z" },
+    "biography": "José Saramago fue un novelista portugués, ganador del Premio Nobel de Literatura en 1998.",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  },
+  {
+    "_id": 10,
+    "name": "Frida Kahlo",
+    "country": "México",
+    "birth_date": { "$date": "1907-07-06T00:00:00Z" },
+    "death_date": { "$date": "1954-07-13T00:00:00Z" },
+    "biography": "Pintora mexicana que trascendió al mundo literario y cultural.",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+  }
+]
