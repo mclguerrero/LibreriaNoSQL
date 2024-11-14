@@ -10,169 +10,282 @@ Este proyecto se centra en la gestión de una librería, aprovechando las capaci
 - **MongoDB Compass** o **Studio 3T**
 - **MongoDB Tools**
 
-## Estructura de la Base de Datos
+## Colecciones de la Base de Datos
 
-### Colección: `authors`
+### 1. Colección `authors`
 
-```bash
+**Propósito**: Almacena información sobre los autores.
+
+**Estructura**:
+
+```json
 {
-  "_id": 1,
-  "name": "Gabriel García Márquez",
-  "country": "Colombia",
-  "createdAt": ISODate("2024-10-17T10:00:00Z"),
-  "updatedAt": ISODate("2024-10-17T10:10:00Z")
-}
-```
-
-### Colección: `books`
-
-```bash
-{
-  "_id": 1,
-  "title": "Cien Años de Soledad",
-  "isbn": "978-3-16-148410-0",
-  "genre": "Ficción",
-  "publicationDate": { "$date": "1605-01-16T00:00:00Z" },
-  "price": 59900,
-  "costPrice": 45900,
-  "isActive": true,
-  "stock": 30,
-  "authors": [1],
-  "pageCount": 274,
-  "createdAt": { "$date": "2024-10-15T00:00:00Z" },
-  "updatedAt": { "$date": "2024-10-15T00:00:00Z" }
-}
-```
-
-### Colección: `roles`
-
-```bash
-{
-  "_id": 1,
-  "name": "Cliente",
-  "createdAt": ISODate("2024-10-17T10:00:00Z"),
-  "updatedAt": ISODate("2024-10-17T10:10:00Z")
-}
-```
-
-### Colección: `users`
-
-```bash
-{
-  "_id": 1,
-  "email": "juanperez@gmail.com",
-  "password": "12345678",
-  "profile": {
     "_id": 1,
-    "firstName": "Juan Miguel",
-    "lastName": "Pérez",
-    "address": "Calle Falsa 123",
-    "phones": ["123456789", "987654321"]
-  },
-  "roles": [1, 2],
-  "createdAt": { "$date": "2024-10-15T00:00:00Z" },
-  "updatedAt": { "$date": "2024-10-15T00:00:00Z" }
+    "name": "Miguel de Cervantes",
+    "country": "España",
+    "birth_date": { "$date": "1547-09-29T00:00:00Z" },
+    "death_date": { "$date": "1616-04-23T00:00:00Z" },
+    "biography": "Miguel de Cervantes fue un escritor, poeta y dramaturgo...",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
 }
 ```
 
-### Colección: `orders`
+**Cardinalidad**: Relación con `books` a través de `authors_books` (muchos a muchos).
 
-```bash
+---
+
+### 2. Colección `genres`
+
+**Propósito**: Define los géneros literarios disponibles en la librería.
+
+**Estructura**:
+
+```json
+{
+    "_id": 1,
+    "name": "Ficción",
+    "description": "Libros que contienen historias inventadas.",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+}
+```
+
+**Cardinalidad**: Relación con `books` a través de `genres_books` (muchos a muchos).
+
+---
+
+### 3. Colección `books` 
+
+**Propósito**: Almacena detalles de los libros en inventario.
+
+**Estructura**:
+
+```json
+{
+    "_id": 1,
+    "title": "El Quijote",
+    "isbn": "978-3-16-148410-0",
+    "publication_date": { "$date": "1605-01-16T00:00:00Z" },
+    "price": { "$numberDecimal": "59900.00" },
+    "cost_price": { "$numberDecimal": "45900.00" },
+    "is_active": true,
+    "stock": 30,
+    "page_count": 274,
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+}
+```
+
+**Cardinalidad**:
+- Relación con `genres` a través de `genres_books` (muchos a muchos).
+- Relación con `authors` a través de `authors_books` (muchos a muchos).
+- Relación con `orders` (uno a muchos, cada libro puede aparecer en múltiples órdenes).
+
+---
+
+### 4. Colección `genres_books`
+
+**Propósito**: Relaciona géneros con libros.
+
+**Estructura**:
+
+```json
+{
+    "_id": 1,
+    "book_id": 1,
+    "genre_id": 1,
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+}
+```
+
+**Cardinalidad**: Relación muchos a muchos entre `genres` y `books`.
+
+---
+
+### 5. Colección `authors_books`
+
+**Propósito**: Relaciona autores con libros, especificando el rol del autor en cada libro.
+
+**Estructura**:
+
+```json
+{
+    "_id": 1,
+    "author_id": 1,
+    "book_id": 1,
+    "contribution_type": "Escritor principal",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+}
+```
+
+**Cardinalidad**: Relación muchos a muchos entre `authors` y `books`.
+
+---
+
+### 6. Colección `orders`
+
+**Propósito**: Almacena pedidos de los usuarios.
+
+**Estructura**:
+
+```json
 {
     "_id": 1,
     "user_id": 1,
     "books": [
-      {
-        "book_id": 1,
-        "quantity": 2
-      },
-      {
-        "book_id": 2,
-        "quantity": 1
-      }
+        { "book_id": 1, "quantity": 2 },
+        { "book_id": 2, "quantity": 1 }
     ],
-    "total": 111800,
-    "createdAt": { "$date": "2024-10-15T00:00:00Z" },
-    "updatedAt": { "$date": "2024-10-15T00:00:00Z" }
-  }
+    "total": { "$numberDecimal": "111800.00" },
+    "status": "Pendiente",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+}
 ```
 
-## Consultas de Actualización
+**Cardinalidad**:
+- Relación con `users` (muchos a uno, un usuario puede tener múltiples órdenes).
+- Relación con `books` (muchos a muchos, una orden puede incluir varios libros y cada libro puede estar en múltiples órdenes).
 
-Los scripts de actualización de la base de datos se encuentran en el archivo `scripts/update_queries.js`, donde se actualizan autores, libros, usuarios, órdenes y roles.
+---
 
-* Consulta de actualización:
+### 7. Colección `roles`
 
-```javascript
+**Propósito**: Define los roles del sistema.
 
-// Actualizar el nombre y país del autor con _id 1
+**Estructura**:
 
-db.authors.updateOne(
-  { _id: 1 },
-  {
-    $set: { 
-      name: "Miguel de Cervantes", 
-      country: "España", 
-      updatedAt: new Date() 
+```json
+{
+    "_id": 1,
+    "name": "Administrador",
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+}
+```
+
+**Cardinalidad**: Relación con `users` a través de `users_roles` (muchos a muchos).
+
+---
+
+### 8. Colección `users`
+
+**Propósito**: Almacena la información de los usuarios de la librería.
+
+**Estructura**:
+
+```json
+{
+    "_id": 1,
+    "email": "juanperez@gmail.com",
+    "password": "12345678",
+    "profile": {
+        "_id": 1,
+        "first_name": "Juan Miguel",
+        "last_name": "Pérez",
+        "address": "Calle Falsa 123",
+        "phones": ["123456789", "987654321"]
     },
-    $setOnInsert: { createdAt: new Date() }
-  },
-  { upsert: true }
-);
+    "is_active": true,
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+}
 ```
 
+**Cardinalidad**:
+- Relación con `orders` (uno a muchos, un usuario puede tener varias órdenes).
+- Relación con `roles` a través de `users_roles` (muchos a muchos).
+
+---
+
+### 9. Colección `users_roles`
+
+**Propósito**: Relaciona usuarios con roles asignados.
+
+**Estructura**:
+
+```json
+{
+    "_id": 1,
+    "user_id": 1,
+    "role_id": 1,
+    "created_at": { "$date": "2024-10-15T00:00:00Z" },
+    "updated_at": { "$date": "2024-10-15T00:00:00Z" }
+}
+```
+
+**Cardinalidad**: Relación muchos a muchos entre `users` y `roles`.
+
+---
 ## **Importar Backup Dump** (`.bson`)
 
-#### Pasos:
-1. Abre tu terminal o consola de comandos.
-2. Ve al directorio donde se encuentra tu backup (el que contiene los archivos `.bson`).
+### Pasos para Restaurar un Backup Completo:
+
+1. **Abre tu terminal o consola de comandos**.
+   
+2. **Navega hasta el directorio donde se encuentra el backup** (el que contiene los archivos `.bson`).
    
    ```bash
    cd "C:\Users\USER\Desktop\LibreriaNoSQL\backups"
    ```
 
-3. Ejecuta el siguiente comando para restaurar todo el dump:
+3. **Ejecuta el siguiente comando** para restaurar todo el dump en la base de datos `libreria`:
 
    ```bash
    mongorestore --db libreria ./dumps_2024-10-17_10-14-00/
    ```
 
-   Esto restaurará todas las colecciones del dump (`authors`, `books`, `orders`, etc.) en la base de datos `libreria`.
+   Este comando restaurará todas las colecciones contenidas en el dump (por ejemplo, `authors`, `books`, `orders`, etc.) en la base de datos `libreria`.
 
-4. Si quieres restaurar una colección específica, puedes hacerlo de la siguiente manera:
+### Pasos para Restaurar una Colección Específica:
+
+Si solo necesitas restaurar una colección en particular (por ejemplo, `books`), usa el siguiente comando:
+
+1. **Ejecuta el comando** para restaurar la colección deseada:
 
    ```bash
    mongorestore --db libreria --collection books ./dumps_2024-10-17_10-14-00/books.bson
    ```
 
+   En este caso, se está restaurando solo la colección `books`.
+
+---
+
 ## **Importar Archivos JSON** (`.json`)
 
-#### Pasos:
-1. Abre tu terminal o consola de comandos.
-2. Ve al directorio donde se encuentran los archivos JSON exportados.
+### Pasos para Importar Archivos JSON:
+
+1. **Abre tu terminal o consola de comandos**.
+   
+2. **Navega hasta el directorio donde se encuentran los archivos JSON exportados**. Por ejemplo:
 
    ```bash
    cd "C:\Users\USER\Desktop\LibreriaNoSQL\backups\json_exports_2024-10-17_10-14-00"
    ```
 
-3. Para importar un archivo JSON a una colección específica, usa el siguiente comando:
+3. **Para importar un archivo JSON a una colección específica**, utiliza el siguiente comando:
 
    ```bash
    mongoimport --db libreria --collection books --file ./books.json --jsonArray
    ```
 
    **Explicación**:
-   - `--db libreria`: Indica la base de datos en la que se importarán los datos.
-   - `--collection books`: Especifica la colección de destino.
+   - `--db libreria`: Especifica la base de datos en la que se importarán los datos.
+   - `--collection books`: Indica la colección de destino (en este caso, `books`).
    - `--file ./books.json`: Ruta al archivo JSON que deseas importar.
-   - `--jsonArray`: Indica que los datos están en formato de arreglo JSON (esto es necesario si el archivo JSON contiene múltiples documentos dentro de un arreglo).
+   - `--jsonArray`: Indica que los datos están en formato de arreglo JSON, lo cual es necesario si el archivo JSON contiene múltiples documentos dentro de un arreglo.
 
-4. Repite el proceso para cada archivo JSON que desees importar:
+### Pasos para Importar Otros Archivos JSON:
 
-   ```bash
-   mongoimport --db libreria --collection authors --file ./authors.json --jsonArray
-   ```
+Si tienes otros archivos JSON que deseas importar (por ejemplo, `authors.json`), repite el proceso utilizando el siguiente comando:
 
-### Consideraciones:
-- Antes de importar, asegúrate de que la estructura de los datos en los archivos `.json` coincida con la estructura de la base de datos.
-- Si los datos ya existen en la base de datos, el comando `mongoimport` no actualiza los documentos existentes, sino que añade nuevos. Para actualizaciones, deberás usar scripts o consultas específicas en MongoDB.
+```bash
+mongoimport --db libreria --collection authors --file ./authors.json --jsonArray
+```
+
+Este comando importará el archivo `authors.json` en la colección `authors` de la base de datos `libreria`.
+
+---
